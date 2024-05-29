@@ -7,5 +7,6 @@ body {
   flex-direction: column;
   font-family: "Rounded Mplus 1c", sans-serif;
   font-size: 1.6rem;
-  color: #fafaed;
+  background: var(--color-off-white);
+  color: var(--color-yellow);
 }
