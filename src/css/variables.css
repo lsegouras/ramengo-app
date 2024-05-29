@@ -1,0 +1,14 @@
+:root {
+  /* Colors */
+  --color-black: #000000;
+  --color-blue: #1820ef;
+  --color-red: #ff4e42;
+  --color-yellow: #ffc024;
+  --color-off-white: #fafaed;
+  --color-white: #ffffff;
+  --color-grey: #c5c5c5;
+
+  /* Background Patterns */
+  --pattern-red: url("../../assets/Hero/pattern-vermelha.png");
+  --pattern-blue: url("../../assets/Hero/pattern-azul.png");
+}
