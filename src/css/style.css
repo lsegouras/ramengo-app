@@ -1,12 +1,16 @@
-html {
-  font-size: 62.5%;
-}
-
 body {
   display: flex;
   flex-direction: column;
   font-family: "Rounded Mplus 1c", sans-serif;
-  font-size: 1.6rem;
+  font-size: 16px;
   background: var(--color-off-white);
   color: var(--color-yellow);
+  width: 100vw;
+}
+
+#hero {
+  width: 100vw;
+  height: 768px;
+  background: var(--pattern-red) no-repeat;
+  background-size: cover;
 }
