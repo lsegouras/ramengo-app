@@ -9,6 +9,6 @@
   --color-grey: #c5c5c5;
 
   /* Background Patterns */
-  --pattern-red: url("../../assets/Hero/pattern-vermelha.png");
-  --pattern-blue: url("../../assets/Hero/pattern-azul.png");
+  --pattern-red: url("/src/assets/Patterns/pattern-vermelha.png");
+  --pattern-blue: url("/src/assets/Patterns/pattern-azul.png");
 }
