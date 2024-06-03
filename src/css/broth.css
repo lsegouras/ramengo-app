@@ -1,5 +1,9 @@
 
 #broth-container {
+  position: absolute;
+  top: 883px;
+  left: 139px;
+  right: 139px;
   width: 1087px;
   height: 448px;
   margin: 0 auto;
