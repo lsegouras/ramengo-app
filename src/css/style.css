@@ -14,3 +14,9 @@ body {
   background: var(--pattern-red) no-repeat;
   background-size: cover;
 }
+
+#broth {
+  width: 100vw;
+  height: 448px;
+  background-color: var(--color-off-white);
+}
