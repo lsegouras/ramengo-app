@@ -1,4 +1,3 @@
-
 export function loadBrothComponent() {
   const brothContainer = document.getElementById("broth");
 
@@ -27,7 +26,7 @@ function fetchBrothData() {
     .then((broths) => {
       const cardsContainer = document.querySelector(".cards");
       broths.forEach((broth) => {
-        createCard(broth, cardsContainer);
+        createCard(broth, cardsContainer, broths); // Passando broths como terceiro argumento
       });
 
       const linkCard = document.createElement("link");
@@ -38,7 +37,7 @@ function fetchBrothData() {
     .catch((error) => console.error("Error fetching broth data:", error));
 }
 
-function createCard(broth, container) {
+function createCard(broth, container, broths) {
   const card = document.createElement("div");
   card.classList.add("card-container");
   card.innerHTML = `
@@ -56,4 +55,17 @@ function createCard(broth, container) {
     </div>
   `;
   container.appendChild(card);
+
+  card.addEventListener('click', () => {
+    const cards = document.querySelectorAll('.card-container');
+    cards.forEach((c) => {
+      c.classList.remove('active');
+      const inactiveBroth = broths.find(b => b.name === c.querySelector('.card-title h2').innerText);
+      if (inactiveBroth) {
+        c.querySelector('.card-icon img').src = inactiveBroth.imageInactive;
+      }
+    });
+    card.classList.add('active');
+    card.querySelector('.card-icon img').src = broth.imageActive;
+  });
 }
