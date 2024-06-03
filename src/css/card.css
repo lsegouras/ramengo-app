@@ -9,6 +9,7 @@
   box-shadow: 0px 4px 12px 0px var(--color-light-grey);
   transition: background-color 0.3s, color 0.3s;
   border-radius: 10px;
+  gap: 10px;
 
 }
 
