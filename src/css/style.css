@@ -17,6 +17,6 @@ body {
 
 #broth {
   width: 100vw;
-  height: 448px;
+  height: auto;
   background-color: var(--color-off-white);
 }
