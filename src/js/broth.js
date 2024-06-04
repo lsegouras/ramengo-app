@@ -24,7 +24,8 @@ function fetchBrothData() {
   })
     .then((response) => response.json())
     .then((broths) => {
-      const cardsContainer = document.querySelector(".cards");
+      const brothContainer = document.getElementById("broth-container");
+      const cardsContainer = brothContainer.querySelector(".cards");
       broths.forEach((broth, index) => {
         createCard(broth, cardsContainer, broths, index);
       });
