@@ -48,3 +48,86 @@
   justify-content: space-between;
   margin-top: 20px;
 }
+
+/* Estilo para o carousel e indicadores em telas pequenas */
+@media (max-width: 425px) {
+  #broth-container{
+    width: 328px;
+    height: 512px;
+    top: 817px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .main-title{
+    width: 328px;
+    height: 66px;
+  }
+
+  .main-title h1{
+    font-size: 24px;
+    line-height: 31px;
+  }
+
+  .main-description{
+    width: 325px;
+    height: 46px;
+  }
+
+  .cards {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 4px 12px 0px var(--color-light-grey);
+  }
+
+  .card-container {
+    width: 288px;
+    display: none;
+    transition: transform 0.3s;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-title {
+    width: 48px;
+  }
+
+  .card-description {
+    width: 232px;
+    height: 16px;
+  }
+
+  .card-description p{
+    line-height: 16px;
+  }
+
+  .card-container.active {
+    display: flex;
+    transform: translateX(0);
+    border-radius: 10px !important; 
+  }
+
+  .indicator-carousel {
+    width: 76px;
+    height: 12px;
+    border-radius: 8px 0px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto 0;
+  }
+
+  .indicator {
+    width: 12px;
+    height: 12px;
+    background: url("/src/assets/Indicators/Rectangle 3.png") no-repeat center;
+    margin: 0 2px;
+  }
+
+  .indicator.active {
+    width: 36px;
+    background: url("/src/assets/Indicators/Rectangle 2.png") no-repeat center;
+  }
+}
